@@ -22,3 +22,31 @@
   - Add support for constructing or verifying Merkle trees directly in the precompile. This could improve rollup verification by quickly validating state changes.
 - Matrix Multiplication or Cryptographic Operations:
   - Enable support for complex mathematical functions or cryptographic operations like elliptic curve pairing, reducing the need for such computations in regular EVM contracts.
+
+## How to use the project
+
+Note: This README assumes that the initial required dependencies like the geth, go and go compiler, solidity and solidity compiler are already installed on your system.
+
+In order to use the project, first clone the repo onto your computer:
+
+```sh
+git clone https://github.com/Cass402/EVM-Custom-Node-Precompile.git
+```
+
+then head into the cloned repository and the clone the go-ethereum fork into the EVM-Custom-Node-Precompile folder using the following command in the terminal:
+
+```sh
+git clone https://github.com/Cass402/go-ethereum.git
+```
+
+Navigate to the cloned go-ethereum folder using:
+
+```sh
+cd go-ethereum
+```
+
+and finally make the geth which compiles all the required code and the precompile contracts:
+
+```sh
+make geth
+```
